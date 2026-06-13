@@ -3,7 +3,7 @@
 本文档面向“下载 fork 后直接安装”的场景，配套脚本位于：
 
 ```text
-trendrader/install-trendradar-docker.sh
+installation/install-trendradar-docker.sh
 ```
 
 项目 fork 地址：
@@ -20,7 +20,7 @@ https://github.com/heixiaochun/TrendRadar.git
 git clone https://github.com/heixiaochun/TrendRadar.git
 cd TrendRadar
 
-bash trendrader/install-trendradar-docker.sh
+bash installation/install-trendradar-docker.sh
 ```
 
 默认行为：
@@ -37,43 +37,43 @@ bash trendrader/install-trendradar-docker.sh
 指定 Web 端口：
 
 ```bash
-bash trendrader/install-trendradar-docker.sh --port 8090
+bash installation/install-trendradar-docker.sh --port 8090
 ```
 
 同时启动 MCP 服务：
 
 ```bash
-bash trendrader/install-trendradar-docker.sh --with-mcp
+bash installation/install-trendradar-docker.sh --with-mcp
 ```
 
 Linux 环境下如果还没有安装 Docker，可以让脚本尝试安装 Docker：
 
 ```bash
-bash trendrader/install-trendradar-docker.sh --install-docker
+bash installation/install-trendradar-docker.sh --install-docker
 ```
 
 跳过镜像拉取，直接使用本地镜像启动：
 
 ```bash
-bash trendrader/install-trendradar-docker.sh --skip-pull
+bash installation/install-trendradar-docker.sh --skip-pull
 ```
 
 只执行一次，不启用定时任务：
 
 ```bash
-bash trendrader/install-trendradar-docker.sh --once
+bash installation/install-trendradar-docker.sh --once
 ```
 
 指定定时表达式，例如每 15 分钟运行一次：
 
 ```bash
-bash trendrader/install-trendradar-docker.sh --cron '*/15 * * * *'
+bash installation/install-trendradar-docker.sh --cron '*/15 * * * *'
 ```
 
 查看帮助：
 
 ```bash
-bash trendrader/install-trendradar-docker.sh --help
+bash installation/install-trendradar-docker.sh --help
 ```
 
 ## Docker 安装说明
@@ -103,7 +103,7 @@ https://docs.docker.com/engine/install/
 如果你信任当前环境，也可以用本目录脚本自动安装：
 
 ```bash
-bash trendrader/install-trendradar-docker.sh --install-docker
+bash installation/install-trendradar-docker.sh --install-docker
 ```
 
 脚本会调用 Docker 官方安装脚本。安装完成后，当前用户可能需要重新登录，或者手动运行：
@@ -252,7 +252,7 @@ vim config/config.yaml
 4. 一键启动：
 
 ```bash
-bash trendrader/install-trendradar-docker.sh
+bash installation/install-trendradar-docker.sh
 ```
 
 5. 查看日志：

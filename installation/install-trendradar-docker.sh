@@ -19,7 +19,7 @@ usage() {
 TrendRadar Docker 一键安装脚本
 
 用法:
-  bash trendrader/install-trendradar-docker.sh [选项]
+  bash installation/install-trendradar-docker.sh [选项]
 
 选项:
   --with-mcp          同时启动 trendradar-mcp 服务
@@ -31,10 +31,10 @@ TrendRadar Docker 一键安装脚本
   -h, --help          显示帮助
 
 示例:
-  bash trendrader/install-trendradar-docker.sh
-  bash trendrader/install-trendradar-docker.sh --port 8090
-  bash trendrader/install-trendradar-docker.sh --with-mcp
-  bash trendrader/install-trendradar-docker.sh --install-docker
+  bash installation/install-trendradar-docker.sh
+  bash installation/install-trendradar-docker.sh --port 8090
+  bash installation/install-trendradar-docker.sh --with-mcp
+  bash installation/install-trendradar-docker.sh --install-docker
 USAGE
 }
 
